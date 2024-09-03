@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+    background-color: red;
+}
+
+section {
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+}
+
+header nav ul li a:hover {
+    color: black;
+
+}
+
+.headerAnime {
+    height: 5rem;
+    position: fixed;
+    z-index: 999;
+    animation: anime 1s forwards;
+}
+
+@keyframes anime {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transition: 1s;
+        transform: translateY(0);
+    }
+}
